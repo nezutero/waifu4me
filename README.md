@@ -1,4 +1,6 @@
-# waifu4me - waifu image fetcher
+# waifu4me - find waifu for you (nsfw/sfw)
+
+Waifu image fetcher with filters, using waifu.pics API
 
 ###
 
@@ -11,6 +13,17 @@
 ## Project structure
 
 ```rust
+.
+├── Cargo.lock
+├── Cargo.toml
+├── README.md
+├── src
+│   ├── fetcher.rs
+│   ├── lib.rs
+│   ├── main.rs
+│   └── vars.rs
+└── tests
+    └── test.rs
 ```
 
 ## Installation
