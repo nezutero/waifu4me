@@ -13,9 +13,11 @@
 ## Project structure
 
 ```rust
-.
+waifu4me
+│
 ├── Cargo.lock
 ├── Cargo.toml
+├── LICENSE
 ├── README.md
 ├── src
 │   ├── cli.rs
