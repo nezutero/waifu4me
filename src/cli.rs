@@ -24,7 +24,7 @@ pub fn cli() -> Result<(), Box<dyn Error>> {
                 .short("c")
                 .long("category")
                 .value_name("CATEGORY")
-                .help("Specify the category of the content to fetch.\n->")
+                .help("Specify the category of the waifu to fetch.\n->")
                 .possible_values(&[
                     "waifu", "nekoshinobu", "megumin", "bully", "cuddle",
                     "cry", "hug", "awoo", "kiss", "lick", "pat", "smug", 
