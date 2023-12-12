@@ -1,6 +1,6 @@
 # waifu4me - find waifu for you (nsfw/sfw)
 
-> A CLI tool that allows you to interact with the waifu4.me API from the comfort of your terminal.
+> A CLI tool that allows you to interact with the waifu.pics API from the comfort of your terminal.
 
 ###
 
