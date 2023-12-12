@@ -63,8 +63,8 @@ pub fn cli() -> Result<(), Box<dyn Error>> {
         let url = format!("{}/{}/{}", base_url, _type, category);
         println!(
             "[{}] Your request: {}",
-            style("INFO").green(),
-            style(&url).cyan()
+            style("INFO").green().bold().italic(),
+            style(&url).cyan().bold().italic()
         );
 
         fetch_single_image(&url)?;
