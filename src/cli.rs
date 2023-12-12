@@ -25,13 +25,14 @@ pub fn cli() -> Result<(), Box<dyn Error>> {
                 .long("category")
                 .value_name("CATEGORY")
                 .help("Specify the category of the waifu to fetch.\n->")
-                .possible_values(&[ "For SFW: waifu", 
+                .possible_values(&[ 
+                    "For SFW:", "waifu", 
                     "nekoshinobu", "megumin", "bully", "cuddle",
                     "cry", "hug", "awoo", "kiss", "lick", "pat", "smug", 
                     "yeet", "blush", "smile","wave", "highfive", "handhold", 
                     "nom", "bite", "glomp", "bonk", "slap", "kill", "kick",
                     "happy", "wink", "poke", "dance", "cringe", 
-                    "\nFor NSFW: waifu", "neko", "trap", "blowjob"
+                    "\nFor NSFW:", "waifu", "neko", "trap", "blowjob"
                 ])
                 .takes_value(true)
                 .required(true)
