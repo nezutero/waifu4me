@@ -5,7 +5,7 @@ use crate::{fetcher::{fetch_many_images, fetch_single_image}, vars::{BASE_URL, B
 
 pub fn cli() -> Result<(), Box<dyn Error>> {
     let matches = App::new("waifu4me")
-        .version("0.1.0")
+        .version("0.1.4")
         .author("kenjitheman")
         .about("CLI tool for waifu image url fetching using waifu.pics API")
         .arg(
