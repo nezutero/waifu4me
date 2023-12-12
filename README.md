@@ -31,8 +31,16 @@
 
 ## Installation
 
+- Install the waifu4me CLI
+
 ```sh
-git clone https://github.com/kenjitheman/waifu4me
+cargo install waifu4me
+```
+
+- Verify the Installation
+
+```sh
+waifu4me --version
 ```
 
 ## Usage
