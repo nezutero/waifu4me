@@ -1,6 +1,6 @@
 # waifu4me - find waifu for you (nsfw/sfw)
 
-Waifu image fetcher with filters, using waifu.pics API
+> A CLI tool that allows you to interact with the waifu4.me API from the comfort of your terminal.
 
 ###
 
@@ -18,23 +18,50 @@ Waifu image fetcher with filters, using waifu.pics API
 ├── Cargo.toml
 ├── README.md
 ├── src
+│   ├── cli.rs
 │   ├── fetcher.rs
+│   ├── handlers.rs
 │   ├── lib.rs
 │   ├── main.rs
 │   └── vars.rs
 └── tests
-    └── test.rs
+    ├── fetcher_test.rs
+    └── integration_test.rs
 ```
 
 ## Installation
 
+- Install the waifu4me CLI
+
 ```sh
-git clone https://github.com/kenjitheman/waifu4me
+cargo install waifu4me
+```
+
+- Verify the Installation
+
+```sh
+waifu4me --version
 ```
 
 ## Usage
 
 ```sh
+USAGE:
+    waifu4me [OPTIONS] --category <CATEGORY> --type <TYPE>
+
+FLAGS:
+    -h, --help       Prints help information
+    -V, --version    Prints version information
+
+OPTIONS:
+    -c, --category <CATEGORY>    Specify the category of the content to fetch.
+                                 -> [possible values: waifu, nekoshinobu, megumin, bully, cuddle, cry, hug, awoo, kiss,
+                                 lick, pat, smug, yeet, blush, smile, wave, highfive, handhold, nom, bite, glomp, bonk,
+                                 slap, kill, kick, happy, wink, poke, dance, cringe]
+    -m, --many <MANY>            Specify the amount of waifus to fetch (true for many).
+                                 -> [default: false]  [possible values: true, false]
+    -t, --type <TYPE>            Specify the type of the content to fetch.
+                                 -> [possible values: sfw, nsfw]
 ```
 
 ## Contributing
