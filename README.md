@@ -2,35 +2,6 @@
 
 > A CLI tool that allows you to interact with the waifu.pics API from the comfort of your terminal.
 
-###
-
-<div align="center">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg" height="200" alt="rust logo"  />
-</div>
-
-###
-
-## Project structure
-
-```rust
-waifu4me
-│
-├── Cargo.lock
-├── Cargo.toml
-├── LICENSE
-├── README.md
-├── src
-│   ├── cli.rs
-│   ├── fetcher.rs
-│   ├── handlers.rs
-│   ├── lib.rs
-│   ├── main.rs
-│   └── vars.rs
-└── tests
-    ├── fetcher_test.rs
-    └── integration_test.rs
-```
-
 ## Installation
 
 - Install the waifu4me CLI
