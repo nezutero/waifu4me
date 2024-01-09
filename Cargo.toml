@@ -1,8 +1,8 @@
 [package]
 name = "waifu4me"
-authors = ["kenjitheman <kenjith3man@gmail.com>"]
+authors = ["btwkenji <btw4dev@gmail.com>"]
 description = "A CLI tool that allows you to interact with the waifu.pics API from the comfort of your terminal."
-repository = "https://github.com/kenjitheman/waifu4me"
+repository = "https://github.com/btwkenji/waifu4me"
 license = "MIT"
 version = "0.1.8"
 edition = "2021"
