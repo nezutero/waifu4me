@@ -1,7 +1,10 @@
+use crate::{
+    fetcher::{fetch_many_images, fetch_single_image},
+    vars::{BASE_URL, BASE_URL_MANY},
+};
 use clap::{value_t, App, Arg};
-use std::error::Error;
 use console::style;
-use crate::{fetcher::{fetch_many_images, fetch_single_image}, vars::{BASE_URL, BASE_URL_MANY}};
+use std::error::Error;
 
 pub fn cli() -> Result<(), Box<dyn Error>> {
     let matches = App::new("waifu4me")
@@ -25,14 +28,43 @@ pub fn cli() -> Result<(), Box<dyn Error>> {
                 .long("category")
                 .value_name("CATEGORY")
                 .help("Specify the category of the waifu to fetch.\n->")
-                .possible_values(&[ 
-                    "For SFW:", "waifu", 
-                    "nekoshinobu", "megumin", "bully", "cuddle",
-                    "cry", "hug", "awoo", "kiss", "lick", "pat", "smug", 
-                    "yeet", "blush", "smile","wave", "highfive", "handhold", 
-                    "nom", "bite", "glomp", "bonk", "slap", "kill", "kick",
-                    "happy", "wink", "poke", "dance", "cringe", 
-                    "\nFor NSFW:", "waifu", "neko", "trap", "blowjob"
+                .possible_values(&[
+                    "For SFW:",
+                    "waifu",
+                    "nekoshinobu",
+                    "megumin",
+                    "bully",
+                    "cuddle",
+                    "cry",
+                    "hug",
+                    "awoo",
+                    "kiss",
+                    "lick",
+                    "pat",
+                    "smug",
+                    "yeet",
+                    "blush",
+                    "smile",
+                    "wave",
+                    "highfive",
+                    "handhold",
+                    "nom",
+                    "bite",
+                    "glomp",
+                    "bonk",
+                    "slap",
+                    "kill",
+                    "kick",
+                    "happy",
+                    "wink",
+                    "poke",
+                    "dance",
+                    "cringe",
+                    "\nFor NSFW:",
+                    "waifu",
+                    "neko",
+                    "trap",
+                    "blowjob",
                 ])
                 .takes_value(true)
                 .required(true)

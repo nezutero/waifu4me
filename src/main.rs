@@ -1,5 +1,5 @@
-use waifu4me::cli::cli;
 use console::style;
+use waifu4me::cli::cli;
 
 fn main() {
     match cli() {
