@@ -9,7 +9,7 @@ use std::error::Error;
 pub fn cli() -> Result<(), Box<dyn Error>> {
     let matches = App::new("waifu4me")
         .version("0.2.0")
-        .author("kenjitheman")
+        .author("nezutero")
         .about("CLI tool for waifu image url fetching using waifu.pics API")
         .arg(
             Arg::with_name("type")
