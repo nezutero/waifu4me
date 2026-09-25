@@ -1,10 +1,10 @@
 [package]
 name = "waifu4me"
-authors = ["Dimitri Nesterenko <me@nezutero.dev>"]
+authors = ["nezutero <me@nezutero.dev>"]
 description = "A CLI tool that allows you to interact with the waifu.pics API from the comfort of your terminal."
 repository = "https://github.com/nezutero/waifu4me"
 license = "MIT"
-version = "0.2.2"
+version = "0.2.3"
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
